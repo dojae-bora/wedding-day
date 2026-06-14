@@ -13,9 +13,9 @@
 html, body { 
     width: 100%; 
     height: 100%; 
-    /* 배경색 변경 */
+    /* 배경색 */
     background-color: #182940; 
-    /* 배경위 종이색상 */
+    /* 배경위 종이색 */
     color: #e2e8f0; 
     /* 가독성 좋은 구글 고딕 폰트를 기본으로 지정 */
     font-family: 'Noto Sans KR', sans-serif;
@@ -484,22 +484,25 @@ footer, .footer-section, .wedding-footer {
 }
 .copy-btn:hover { background-color: #f5f3ee; }
 
-/* 🖤 하단 푸터 1px */
+/* 🖤 하단 푸터 */
 .wedding-footer {
     width: 100% !important;
-    display: block !important;
     background-color: #1a2321 !important;
     color: #a19c91 !important;
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-align: center;
-    margin-top: -2px !important; 
-    position: relative;
-    z-index: 10 !important;
+}
+/* 💡 아래쪽 모서리는 부드럽게 깎아줍니다. */
     border-radius: 0 0 12px 12px !important;
     overflow: hidden !important; 
-    padding-top: 30px !important;
+    padding-top: 25px !important;
     padding-bottom: 35px !important;
+    border-left: 1.5px solid #1a2321 !important;
+    border-right: 1.5px solid #1a2321 !important;
+    border-bottom: 1.5px solid #1a2321 !important;
+    
+    /* 혹시 모를 꼬임 방지 */
     box-sizing: border-box !important;
 }
 
@@ -587,6 +590,9 @@ footer, .footer-section, .wedding-footer {
 .root_daum_roughmap .wrap_map {
     border: none !important;
 }
+/* ==============
+   🔥 최종 통합 코드 
+   ============== */
 
 .content-section.account-section {
     border-bottom: none !important;
@@ -594,21 +600,29 @@ footer, .footer-section, .wedding-footer {
     z-index: 4;
 }
 
-/* 🖤 하단 푸터 1px */
 .wedding-footer {
     width: 100% !important;
     display: block !important;
+    
+    /* 💡 디자인 무드 유지 (세련된 검은색 계열 배경) */
     background-color: #1a2321 !important;
     color: #a19c91 !important;
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-align: center;
+    
+    /* 💡 푸터를 흰색 섹션 위로 살짝 올려서 1px 미세 틈새를 아래에서 완벽하게 덮어 숨깁니다 */
     margin-top: -2px !important; 
     position: relative;
     z-index: 10 !important;
+
+    /* 💡 하단 양쪽 모서리 부드럽게 12px 깎기 */
     border-radius: 0 0 12px 12px !important;
     overflow: hidden !important; 
+    
+    /* 💡 안정감 있는 내부 여백 조절 */
     padding-top: 30px !important;
     padding-bottom: 35px !important;
     box-sizing: border-box !important;
 }
+
