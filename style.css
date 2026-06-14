@@ -593,3 +593,22 @@ footer, .footer-section, .wedding-footer {
     position: relative;
     z-index: 4;
 }
+
+/* 🖤 하단 푸터 1px */
+.wedding-footer {
+    width: 100% !important;
+    display: block !important;
+    background-color: #1a2321 !important;
+    color: #a19c91 !important;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -2px !important; 
+    position: relative;
+    z-index: 10 !important;
+    border-radius: 0 0 12px 12px !important;
+    overflow: hidden !important; 
+    padding-top: 30px !important;
+    padding-bottom: 35px !important;
+    box-sizing: border-box !important;
+}
