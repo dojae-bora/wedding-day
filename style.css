@@ -679,16 +679,15 @@ footer, .footer-section, .wedding-footer {
     padding: 0 !important;
 }
 
-/* 🟫 [크기 고정 오피셜] 계좌번호 버튼 열고 닫을 때 세로 높이 완벽 일치 */
-.account-section .accordion-title,
-.account-section .accordion-header,
-.account-section button,
-.account-section div[class*="title"],
-.account-section div[class*="header"] {
-    /* 💡 위아래 패딩(내부 여백)을 아예 똑같이 고정해서 열리든 닫히든 두께를 완벽하게 일치시킵니다. */
+/* 🟫 [진짜 범인 검거] 계좌번호 버튼 열고 닫을 때 두께 오차 0% 박멸 */
+.accordion-header {
+    /* 💡 위아래 두께를 딱 15px로 강제 고정합니다. (닫혔을 때의 이쁜 두께) */
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-    height: auto !important; /* 높이가 팅기는 현상 방지 */
+    
+    /* 💡 열렸을 때 자바스크립트나 다른 코드가 높이를 마음대로 늘리지 못하게 차단 */
+    height: auto !important; 
+    min-height: 54px !important; /* 최소 높이만 확보 */
     
     /* 기존 좌우 여백 및 정렬 유지 */
     padding-left: 20px !important;
@@ -697,5 +696,13 @@ footer, .footer-section, .wedding-footer {
     align-items: center !important;
     justify-content: space-between !important;
     box-sizing: border-box !important;
+}
+
+/* 💡 버튼이 열린 상태(.active 등이 붙었을 때)가 되어도 두께를 절대 안 변하게 한 번 더 방어 */
+.accordion-header.active,
+.accordion-item.active .accordion-header {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    height: auto !important;
 }
 
