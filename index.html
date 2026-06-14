@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>허도재 • 윤보라 결혼합니다</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="허도재 ❤ 윤보라 결혼합니다">
+    <meta property="og:description" content="2027년 1월 16일 오후 4시 40분 결혼식에 초대합니다.">
+    <meta property="og:image" content="images/kakao-thumb.jpg">
+
+<!-- 🎨 구글 폰트 (나눔명조 & Noto Sans 고딕) 불러오기 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-overlay" onclick="openEnvelope()">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter-sheet">
+                    <p class="envelope-name">허도재 <b>•</b> 윤보라</p>
+                    <p class="envelope-date">2027. 01. 16</p>
+                    <p class="envelope-sub">결혼합니다</p>
+                </div>
+            </div>
+            <p class="click-notice">TAP TO OPEN</p>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="top-sticky-bar">
+            <audio id="bgm" loop>
+                <source src="music/bgm.mp3" type="audio/mp3">
+            </audio>
+            <button id="bgm-btn" onclick="toggleBgm()">🎵 Music Off</button>
+        </div>
+
+
+<!-- 👑 메인 커버 섹션 -->
+        <section class="main-cover">
+            <div class="cover-text">
+                <span class="wedding-title">THE WEDDING DAY</span>
+                <h1 class="main-names">허도재 · 윤보라</h1>
+                <p class="main-date-place">2027. 01. 16 토요일 오후 4시 40분 | 웨딩시그니처</p>
+            </div>
+            <div class="main-photo-area">
+                <img src="images/main.jpg" alt="Our Wedding Photo"
+onerror="this.style.display='none';">
+            </div>
+        </section>
+
+        <!-- ⏳ [새로 추가] 실시간 D-DAY 타이머 섹션 -->
+        <section class="countdown-timer-section">
+            <div class="dday-title">도재와 보라의 결혼식까지</div>
+            <div id="dday-counter" class="dday-badge">D-DAY 계산중...</div>
+            
+            <div class="timer-container">
+                <div class="time-box"><span id="timer-days">00</span><label>DAYS</label></div>
+                <div class="time-divider">:</div>
+                <div class="time-box"><span id="timer-hours">00</span><label>HOURS</label></div>
+                <div class="time-divider">:</div>
+                <div class="time-box"><span id="timer-min">00</span><label>MIN</label></div>
+                <div class="time-divider">:</div>
+                <div class="time-box"><span id="timer-sec">00</span><label>SEC</label></div>
+            </div>
+        </section>
+
+        <section class="content-section invitation-section">
+            <span class="section-sub">INVITATION</span>
+            <h2 class="section-title">소중한 분들을 초대합니다</h2>
+            <div class="flower-deco">-</div>
+            <p class="invitation-text">
+                서로 다른 길을 걸어온 두 사람이<br>
+                이제 같은 방향을 바라보며<br>
+                평생을 함께하고자 합니다.<br>
+                <br>
+                저희 두 사람이 하나가 되는 뜻깊은 날,<br>
+                귀한 걸음 하시어 저희의 새로운 시작을<br>
+                따뜻한 마음으로 축복해 주시면 감사하겠습니다.
+            </p>
+            
+            <div class="family-relations">
+                <p><b>허순강 · 양연순</b> 의 장남 <span class="name-highlight">허도재</span></p>
+                <p><b>윤경용 · 송경희</b> 의 장녀 <span class="name-highlight">윤보라</span></p>
+            </div>
+        </section>
+
+        <section class="content-section calendar-section">
+            <h3 class="calendar-month">2027. 01</h3>
+            <div class="mini-calendar">
+                <div class="calendar-grid headers">
+                    <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+                </div>
+                <div class="calendar-grid days">
+                    <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+                    <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                    <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span class="wedding-day">16</span>
+                    <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+                    <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                    <span>31</span>
+                </div>
+            </div>
+            <p class="countdown-text">도재 ❤ 보라의 결혼식이 <b>달력에 표시된 날</b>에 진행됩니다.</p>
+        </section>
+
+        <!-- 📸 갤러리 섹션 -->
+        <section class="content-section gallery-section">
+            <span class="section-sub">GALLERY</span>
+            <h2 class="section-title">우리의 아름다운 순간</h2>
+<p class="gallery-notice">사진을 클릭하면 크게 보실 수 있습니다.</p>
+            
+            <div class="gallery-container">
+                <!-- 💡 클릭하면 이미지 확대를 위해 openModal() 함수를 연결했습니다! -->
+                <div class="gallery-item"><img src="images/photo1.jpg" alt="갤러리1" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo2.jpg" alt="갤러리2" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo3.jpg" alt="갤러리3" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo4.jpg" alt="갤러리4" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo5.jpg" alt="갤러리5" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo6.jpg" alt="갤러리6" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo7.jpg" alt="갤러리7" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo8.jpg" alt="갤러리8" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo9.jpg" alt="갤러리9" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo10.jpg" alt="갤러리10" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo11.jpg" alt="갤러리11" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo12.jpg" alt="갤러리12" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo13.jpg" alt="갤러리13" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo14.jpg" alt="갤러리14" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo15.jpg" alt="갤러리15" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo16.jpg" alt="갤러리16"
+onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+            </div>
+        </section>
+
+        <!-- 🔍 [새로 추가] 사진 클릭 시 크게 보는 팝업창 박스 -->
+       <div id="image-modal" class="modal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
+    <span class="modal-close" style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; cursor: pointer;">&times;</span>
+    <img class="modal-content" id="modal-img" style="max-width: 90%; max-height: 90%; border-radius: 5px;">
+</div>
+        <section class="content-section location-section">
+            <span class="section-sub">LOCATION</span>
+            <h2 class="section-title">오시는 길</h2>
+
+<!-- 🗺️ 수정 후 (네이버/카카오에서 복사한 iframe 코드를 넣은 모습) -->
+<div class="map-area" style="width: 100%; min-height: 280px; background-color: #f9f9f9; border-radius: 8px; overflow: hidden;">
+    <div id="daumRoughmapContainer1781420580863" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+</div>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<script charset="UTF-8">
+    window.addEventListener('load', function() {
+        if (typeof daum !== 'undefined' && daum.roughmap && daum.roughmap.Lander) {
+            new daum.roughmap.Lander({
+                "timestamp" : "1781420580863",
+                "key" : "2qxf2rzqqciv",
+                "mapWidth" : "100%",  /* 모든 스마트폰 가로 화면에 꽉 차게 */
+                "mapHeight" : "280"   /* 보기 편한 높이 */
+            }).render();
+        }
+    });
+</script>  
+
+            <div class="location-details">
+                <h3 class="hall-name">웨딩시그니처 4층 아너스홀</h3>
+                <p class="hall-address">서울시 마포구 양화로 87 (전화: 02-335-5400)</p>
+                
+                <div class="transport-info">
+                    <p><b>지하철</b> 2호선,6호선 합정역 2번 출구 도보 3분 |<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2호선,경의중앙선 홍대입구역 1번 출구 도보 8분</p>
+                    <p><b>버 스</b> 일반 100번, 직행 2000번 '웨딩홀 앞' 하차</p>
+                    <p><b>주 차</b> 건물 내 지하 주차장 2시간 무료 주차</p>
+                </div>
+            </div>
+
+            <div class="map-buttons">
+                <a href="https://kko.to/XprRtLoMdJ" target="_blank" class="map-btn kakao">카카오맵</a>
+                <a href="https://naver.me/xFLuQhhM" target="_blank" class="map-btn naver">네이버지도</a>
+                <a href="https://pages.tmap.co.kr" target="_blank" class="map-btn tmap">T맵</a>
+            </div>
+        </section>
+
+        <section class="content-section account-section">
+            <span class="section-sub">INFORMATION</span>
+            <h2 class="section-title">마음 전하실 곳</h2>
+            <p class="account-intro">참석이 어려우신 분들을 위해 비대면으로나마<br>마을을 전하실 수 있도록 안내드립니다.<br>보내주신 정성 소중히 간직하겠습니다.<br><br>예식장 규정상 화환 반입 및 설치가 불가한 점 양해 부탁드립니다.</p>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>신랑측 계좌번호 </span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="account-row">
+                            <span>하나은행 123-456-7890<br><b>신랑 | 허도재</b></span>
+                            <button class="copy-btn" onclick="copyText('123-456-7890')">복사</button>
+                        </div>
+                        <div class="account-row">
+                            <span>신한은행 987-654-3210<br><b>혼주 | 허순강</b></span>
+                            <button class="copy-btn" onclick="copyText('987-654-3210')">복사</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>신부측 계좌번호 </span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="account-row">
+                            <span>국민은행 111-222-33333<br><b>신부 | 윤보라</b></span>
+                            <button class="copy-btn" onclick="copyText('111-222-33333')">복사</button>
+                        </div>
+                        <div class="account-row">
+                            <span>농협은행 444-5555-6666<br><b>혼주 | 윤경용</b></span>
+                            <button class="copy-btn" onclick="copyText('444-5555-6666')">복사</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="wedding-footer" style="width: 100% !important; display: block !important; background-color: #1a2321 !important; color: #a19c91 !important; font-size: 0.8rem !important; letter-spacing: 1px !important; text-align: center !important; border-radius: 0 0 12px 12px !important; overflow: hidden !important; padding-top: 30px !important; padding-bottom: 35px !important; margin-top: -2px !important; box-sizing: border-box !important;">
+            <p style="margin: 0 !important;">허도재 ❤ 윤보라 - 2027.01.16</p>
+        </footer>
+    </div>
+
+<!-- 🎨 갤러리 팝업창을 위한 스타일 디자인 (이게 없으면 안 보입니다!) -->
+<style>
+    /* 팝업창 전체 배경 (어둡게 화면을 덮음) */
+    .modal {
+        display: none; /* 기본 상태는 숨김 */
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85); /* 85% 어둡게 */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 팝업창 안에 들어갈 확대된 이미지 스타일 */
+    .modal-content {
+        max-width: 90%;
+        max-height: 85%;
+        object-fit: contain;
+        border-radius: 8px;
+        animation: zoomIn 0.3s ease; /* 열릴 때 부드럽게 커지는 효과 */
+    }
+
+    /* 닫기 버튼 (X) 스타일 */
+    .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    @keyframes zoomIn {
+        from { transform: scale(0.9); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+</style>
+
+<!-- 🔍 사진 클릭 시 크게 보는 팝업창 박스 그릇 -->
+<div id="image-modal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+    // 🔍 갤러리 사진 크게 보기 함수
+    function openModal(src) {
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-img");
+        if (modal && modalImg) {
+            modal.style.display = "flex"; // 화면 한가운데 정렬하며 정식으로 노출!
+            modalImg.src = src;
+        }
+    }
+
+    // ❌ 팝업창 닫기 함수
+    function closeModal() {
+        const modal = document.getElementById("image-modal");
+        if (modal) {
+            modal.style.display = "none"; // 다시 숨김
+        }
+    }
+</script>
+
+<script>
+        // ⏳ [수정] 모든 기기(아이폰, 맥북, PC)에서 에러(NaN) 없이 무조건 작동하는 타이머 로직
+        function countUpWedding() {
+            // 날짜와 시간을 분리하여 안전하게 생성 (NaN 오류 완벽 방지 포맷)
+            const weddingDate = new Date(2027, 0, 16, 16, 40, 0).getTime(); // 2027년 1월 16일 16시 40분
+            
+            setInterval(function() {
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+                
+                // html에 적힌 id="dday-counter"와 완벽 매칭
+                const ddayBadge = document.getElementById("dday-counter");
+                
+                // 예식 당일이거나 날짜가 지났을 때 처리
+                if (distance < 0) {
+                    if (ddayBadge) ddayBadge.innerText = "D-DAY ♥ 축하해주셔서 감사합니다";
+                    document.getElementById("timer-days").innerText = "00";
+                    document.getElementById("timer-hours").innerText = "00";
+                    document.getElementById("timer-min").innerText = "00";
+                    document.getElementById("timer-sec").innerText = "00";
+                    return;
+                }
+                
+                // 시간 변환 연산
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                // 화면에 값 뿌려주기
+                if (ddayBadge) {
+                    ddayBadge.innerText = `D - ${days}`;
+                }
+                
+                // 각각의 숫자 칸에 반영 (한 자릿수일 때 앞에 0 붙이기)
+                if (document.getElementById("timer-days")) document.getElementById("timer-days").innerText = String(days).padStart(2, '0');
+                if (document.getElementById("timer-hours")) document.getElementById("timer-hours").innerText = String(hours).padStart(2, '0');
+                if (document.getElementById("timer-min")) document.getElementById("timer-min").innerText = String(minutes).padStart(2, '0');
+                if (document.getElementById("timer-sec")) document.getElementById("timer-sec").innerText = String(seconds).padStart(2, '0');
+                
+            }, 1000);
+        }
+
+        // 페이지가 열릴 때 타이머 즉시 실행
+        countUpWedding();
+
+        // 🎵 배경음악 봉투 열기 기능
+        function openEnvelope() {
+            const overlay = document.getElementById('intro-overlay');
+            const mainContent = document.getElementById('main-content');
+            const bgm = document.getElementById('bgm');
+
+            overlay.style.transition = "opacity 0.8s ease";
+            overlay.style.opacity = "0";
+            
+            setTimeout(() => {
+                overlay.style.display = "none";
+                mainContent.style.display = "block";
+                window.scrollTo(0, 0); 
+                if(bgm) {
+                    bgm.play().catch(() => {});
+                }
+            }, 800);
+        }
+
+        function toggleBgm() {
+            const bgm = document.getElementById('bgm');
+            const btn = document.getElementById('bgm-btn');
+            if (bgm.paused) {
+                bgm.play();
+                btn.innerText = "🎵 Music On";
+            } else {
+                bgm.pause();
+                btn.innerText = "🔇 Music Off";
+            }
+        }
+
+        // 📂 아코디언 토글 기능
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.innerText = "▼";
+                element.classList.remove('active');
+            } else {
+                content.style.display = "block";
+                arrow.innerText = "▲";
+                element.classList.add('active');
+            }
+        }
+
+        // 📋 계좌번호 자동 복사 및 안내 기능
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("계좌번호가 클립보드에 복사되었습니다.");
+            }).catch(err => {
+                console.error("복사 실패: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
