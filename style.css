@@ -725,3 +725,14 @@ footer, .footer-section, .wedding-footer {
     padding-bottom: 15px !important;
 }
 
+/* 🔗 계좌번호 숫자가 파란색 링크로 변하는 것을 방지 */
+a {
+    color: inherit !important;      /* 원래 글자색을 따라감 */
+    text-decoration: none !important; /* 밑줄 제거 */
+}
+
+/* 혹시 숫자만 파란색인 경우를 위해 추가 */
+span, div, b {
+    color: inherit !important;
+}
+
