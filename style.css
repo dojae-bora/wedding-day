@@ -678,3 +678,24 @@ footer, .footer-section, .wedding-footer {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+/* 🟫 [크기 고정 오피셜] 계좌번호 버튼 열고 닫을 때 세로 높이 완벽 일치 */
+.account-section .accordion-title,
+.account-section .accordion-header,
+.account-section button,
+.account-section div[class*="title"],
+.account-section div[class*="header"] {
+    /* 💡 위아래 패딩(내부 여백)을 아예 똑같이 고정해서 열리든 닫히든 두께를 완벽하게 일치시킵니다. */
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    height: auto !important; /* 높이가 팅기는 현상 방지 */
+    
+    /* 기존 좌우 여백 및 정렬 유지 */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+}
+
