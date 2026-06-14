@@ -138,7 +138,7 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
             </div>
         </section>
 
-        <!-- 🔍 사진 클릭 시 크게 보는 팝업창 박스 -->
+        <!-- 🔍 [새로 추가] 사진 클릭 시 크게 보는 팝업창 박스 -->
        <div id="image-modal" class="modal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
     <span class="modal-close" style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; cursor: pointer;">&times;</span>
     <img class="modal-content" id="modal-img" style="max-width: 90%; max-height: 90%; border-radius: 5px;">
@@ -147,7 +147,7 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
             <span class="section-sub">LOCATION</span>
             <h2 class="section-title">오시는 길</h2>
 
-<!-- 🗺️ 네이버/카카오에서 복사한 iframe 코드를 넣은 모습 -->
+<!-- 🗺️ 수정 후 (네이버/카카오에서 복사한 iframe 코드를 넣은 모습) -->
 <div class="map-area" style="width: 100%; min-height: 280px; background-color: #f9f9f9; border-radius: 8px; overflow: hidden;">
     <div id="daumRoughmapContainer1781420580863" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
 </div>
@@ -198,8 +198,12 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
                     </button>
                     <div class="accordion-content">
                         <div class="account-row">
-                            <span>허도재<br><b>하나은행 138-892220-950307</b></span>
+                            <span>하나은행 123-456-7890<br><b>신랑 | 허도재</b></span>
                             <button class="copy-btn" onclick="copyText('123-456-7890')">복사</button>
+                        </div>
+                        <div class="account-row">
+                            <span>신한은행 987-654-3210<br><b>혼주 | 허순강</b></span>
+                            <button class="copy-btn" onclick="copyText('987-654-3210')">복사</button>
                         </div>
                     </div>
                 </div>
@@ -211,8 +215,12 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
                     </button>
                     <div class="accordion-content">
                         <div class="account-row">
-                            <span>윤보라<br><b>국민은행 431801-01-1955-95</b></span>
+                            <span>국민은행 111-222-33333<br><b>신부 | 윤보라</b></span>
                             <button class="copy-btn" onclick="copyText('111-222-33333')">복사</button>
+                        </div>
+                        <div class="account-row">
+                            <span>농협은행 444-5555-6666<br><b>혼주 | 윤경용</b></span>
+                            <button class="copy-btn" onclick="copyText('444-5555-6666')">복사</button>
                         </div>
                     </div>
                 </div>
@@ -293,10 +301,10 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
 </script>
 
 <script>
-        // ⏳ 모든 기기(아이폰, 맥북, PC)에서 에러(NaN) 없이 무조건 작동하는 타이머 로직
+        // ⏳ [수정] 모든 기기(아이폰, 맥북, PC)에서 에러(NaN) 없이 무조건 작동하는 타이머 로직
         function countUpWedding() {
             // 날짜와 시간을 분리하여 안전하게 생성 (NaN 오류 완벽 방지 포맷)
-            const weddingDate = new Date(2027, 0, 16, 16, 40, 0).getTime(); 
+            const weddingDate = new Date(2027, 0, 16, 16, 40, 0).getTime(); // 2027년 1월 16일 16시 40분
             
             setInterval(function() {
                 const now = new Date().getTime();
@@ -307,7 +315,7 @@ onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></
                 
                 // 예식 당일이거나 날짜가 지났을 때 처리
                 if (distance < 0) {
-                    if (ddayBadge) ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다 ♡";
+                    if (ddayBadge) ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다";
                     document.getElementById("timer-days").innerText = "00";
                     document.getElementById("timer-hours").innerText = "00";
                     document.getElementById("timer-min").innerText = "00";
