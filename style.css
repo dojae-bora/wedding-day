@@ -632,44 +632,48 @@ footer, .footer-section, .wedding-footer {
 }
 
 /* =======================================================
-   🔥 지독한 틈새와 직각 모서리를 완전히 정복하는 최종 통합 코드 
+   👑 [진짜 최종 완결] 여백 크기 고정 및 푸터 완벽 밀착 코드
    ======================================================= */
 
-/* 1️⃣ 푸터 바로 위의 흰색 섹션 하단 정리 */
+/* 1️⃣ 계좌번호 섹션: 열리든 닫히든 하단 여백 비율을 동일하게 유지 */
 .content-section.account-section {
     border-bottom: none !important;
-    position: relative;
-    z-index: 4;
+    position: relative !important;
+    z-index: 4 !important;
+    
+    /* 💡 아래쪽 여백을 고정 픽셀이 아닌 알맞은 크기(40px)로 설정해, 아코디언 크기에 맞춰 상자가 정갈하게 닫히고 열리게 합니다. */
+    padding-bottom: 40px !important; 
+    box-sizing: border-box !important;
 }
 
-/* 👑 인터넷 세상에서도 완벽하게 먹히는 하단 마감 최종장 */
+/* 2️⃣ 하단 푸터: 본문 상자 크기에 따라 군더더기 없이 딱 달라붙음 */
 .wedding-footer {
     width: 100% !important;
     display: block !important;
+    clear: both !important;
     
-    /* 💡 하단 배경을 고급스러운 어두운 톤으로 강제 고정 */
+    /* 배경 및 글자색 무드 유지 */
     background-color: #1a2321 !important;
     color: #a19c91 !important;
     font-size: 0.8rem !important;
     letter-spacing: 1px !important;
     text-align: center !important;
     
-    /* 💡 흰색 섹션과의 미세한 틈새를 덮어 숨기는 치트키 */
-    margin-top: -2px !important; 
+    /* 💡 틈새 방지용 1px만 딱 겹치게 고정 */
+    margin-top: -1px !important; 
     position: relative !important;
-    z-index: 10 !important;
+    z-index: 5 !important;
 
-    /* 💡 하단 왼쪽, 오른쪽 모서리만 완벽하게 12px 깎기 */
+    /* 하단 모서리 12px 라운딩 */
     border-radius: 0 0 12px 12px !important;
     overflow: hidden !important; 
     
-    /* 💡 위아래 정갈한 여백 확보 */
+    /* 푸터 내부 정갈한 여백 */
     padding-top: 30px !important;
     padding-bottom: 35px !important;
     box-sizing: border-box !important;
 }
 
-/* 💡 푸터 내부 글자가 삐져나와 틈새 만드는 현상 차단 */
 .wedding-footer p {
     margin: 0 !important;
     padding: 0 !important;
