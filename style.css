@@ -497,29 +497,53 @@ footer, .footer-section, .wedding-footer {
 }
 .copy-btn:hover { background-color: #f5f3ee; }
 
-/* 🖤 하단 푸터 (지독한 1px 흰색/네이비 틈새 완벽 박멸 버전) */
+/* =======================================================
+   👑 [최종장] 계좌번호 열릴 때 푸터 밀림 방지 및 마감 통합 코드
+   ======================================================= */
+
+/* 1️⃣ 계좌번호 섹션 전체 상자의 높이와 여백을 단단하게 고정 */
+.content-section.account-section {
+    border-bottom: none !important;
+    position: relative !important;
+    z-index: 4 !important;
+    
+    /* 💡 [핵심] 계좌번호가 열려도 아래쪽 흰색 바탕 여백이 최소 60px 이상 정갈하게 유지되도록 방어벽을 칩니다. */
+    padding-bottom: 60px !important; 
+    box-sizing: border-box !important;
+}
+
+/* 2️⃣ 하단 푸터 영역이 위로 절대 침범하지 못하도록 위치 고정 */
 .wedding-footer {
     width: 100% !important;
+    display: block !important;
+    clear: both !important; /* 위에서 일어나는 모든 레이아웃 변화와 분리 */
+    
+    /* 💡 디자인 무드 유지 */
     background-color: #1a2321 !important;
     color: #a19c91 !important;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    text-align: center;
+    font-size: 0.8rem !important;
+    letter-spacing: 1px !important;
+    text-align: center !important;
     
-    /* 💡 [수정] 아래쪽 모서리는 부드럽게 깎아줍니다. */
+    /* 💡 위쪽 흰색 섹션과의 미세한 1px 틈새만 살짝 물고 들어가되, 위로 더 밀려 올라가지 않게 z-index 조절 */
+    margin-top: -1px !important; 
+    position: relative !important;
+    z-index: 5 !important;
+
+    /* 💡 하단 왼쪽, 오른쪽 모서리 부드럽게 12px 깎기 */
     border-radius: 0 0 12px 12px !important;
     overflow: hidden !important; 
-    padding-top: 25px !important;
-    padding-bottom: 35px !important;
-
-    /* 🔥 [치트키] 양옆과 아래쪽에 푸터와 똑같은 색상의 1px 테두리를 칠해버립니다.
-       이렇게 하면 브라우저 오차 때문에 생기던 하얀 틈새가 테두리 색상으로 채워지면서 완벽하게 가려집니다! */
-    border-left: 1.5px solid #1a2321 !important;
-    border-right: 1.5px solid #1a2321 !important;
-    border-bottom: 1.5px solid #1a2321 !important;
     
-    /* 혹시 모를 꼬임 방지 */
+    /* 💡 위아래 정갈한 푸터 내부 여백 */
+    padding-top: 30px !important;
+    padding-bottom: 35px !important;
     box-sizing: border-box !important;
+}
+
+/* 푸터 내부 글자 여백 정리 */
+.wedding-footer p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* ==========================================
