@@ -53,7 +53,7 @@ function countUpWedding() {
         
         // 예식 당일이거나 날짜가 지났을 때 처리
         if (distance < 0) {
-            if (ddayBadge) ddayBadge.innerText = "D-DAY ♥ 축하해주셔서 감사합니다";
+            if (ddayBadge) ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다";
             document.getElementById("timer-days").innerText = "00";
             document.getElementById("timer-hours").innerText = "00";
             document.getElementById("timer-min").innerText = "00";
@@ -156,11 +156,13 @@ function countUpWedding() {
     setInterval(function() {
         const now = new Date().getTime();
         const distance = finalTargetDate - now;
+        
+        // 💡 [수정] index.html의 id="dday-count"와 똑같이 하이픈(-)으로 맞춰줍니다.
         const ddayBadge = document.getElementById("dday-count");
         
         // 예식 당일이거나 날짜가 지났을 때 처리
         if (distance < 0) {
-            if (ddayBadge) ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다 ♡";
+            if (ddayBadge) ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다";
             document.getElementById("timer-days").innerText = "00";
             document.getElementById("timer-hours").innerText = "00";
             document.getElementById("timer-min").innerText = "00";
@@ -194,7 +196,7 @@ countUpWedding();
         countUpWedding();
 
 
-// 🔍 갤러리 사진 크게 보기 (모달 팝업) 함수
+// 🔍 [추가] 갤러리 사진 크게 보기 (모달 팝업) 함수
 function openModal(src) {
     const modal = document.getElementById("image-modal");
     const modalImg = document.getElementById("modal-img");
@@ -204,7 +206,7 @@ function openModal(src) {
     }
 }
 
-// ❌ 팝업창 닫기 함수
+// ❌ [추가] 팝업창 닫기 함수
 function closeModal() {
     const modal = document.getElementById("image-modal");
     if (modal) {
