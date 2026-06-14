@@ -1,31 +1,34 @@
-/* 🟫 계좌번호 버튼과 내용만 검정색으로 지정 (나머지 영역은 원래 테마 유지) */
-.accordion-header, 
-.accordion-header span, 
-.accordion-header .arrow,
-.account-row span, 
-.account-row b,
-.account-row .copy-btn {
-    color: #2b2b2b !important;
-}
-
-/* 🟫 버튼 배경색 고정 */
+/* 🟫 계좌번호 버튼 스타일 및 간격 통합 설정 */
 .accordion-header {
     background-color: #eceae4 !important;
-}
-
-/* 🚨 최우선 순위로 버튼 높이와 패딩을 고정 (다른 모든 CSS보다 우선함) */
-.accordion-header {
+    color: #2b2b2b !important;
     height: 54px !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+    padding: 15px 20px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
     box-sizing: border-box !important;
-    min-height: 54px !important;
-    max-height: 54px !important;
+    border: none !important;
+    margin-bottom: 20px !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+}
+
+/* 모바일 전용 간격 설정 */
+@media (max-width: 768px) {
+    .accordion-header {
+        margin-bottom: 30px !important;
+    }
+}
+
+/* 계좌번호 내부 글자색 강제 고정 */
+.accordion-header span, 
+.accordion-header .arrow,
+.account-row span, 
+.account-row b {
+    color: #2b2b2b !important;
 }
 
 /* ==========================================
@@ -474,23 +477,6 @@ footer, .footer-section, .wedding-footer {
     flex-direction: column;
     gap: 12px;
 }
-.accordion-header {
-    width: 100%;
-    padding: 16px 20px;
-    background-color: #f5f3ee;
-    border: 1px solid #e8e5dd;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #3b3934;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-.accordion-header:hover { background-color: #edebe4; }
-.accordion-header.active { background-color: #eceae4; font-weight: 500; }
-.accordion-header .arrow { font-size: 0.75rem; color: #8c8576; }
 
 .accordion-content {
     display: none; /* 기본 숨김 */
@@ -708,58 +694,49 @@ footer, .footer-section, .wedding-footer {
     padding: 0 !important;
 }
 
-/* 🟫 계좌번호 버튼 높이 54px 완벽 고정 */
-.accordion-header {
-    /* 높이를 54px로 강제 고정 */
-    height: 54px !important;
-    min-height: 54px !important;
-    max-height: 54px !important;
-    
-    /* 패딩 설정 (위아래 합쳐서 54px가 되도록 조정) */
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    
-    /* 정렬 및 박스 모델 */
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    background: inherit; /* 혹시 배경색이 변하면 이 줄을 추가하세요 */
-}
-
-/* 열린 상태에서도 높이 변화 절대 금지 */
-.accordion-header.active,
-.accordion-item.active .accordion-header {
-    height: 54px !important;
-    min-height: 54px !important;
-    max-height: 54px !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-}
-
 /* 🔗 계좌번호 숫자가 파란색 링크로 변하는 것을 방지 */
 a {
     color: inherit !important;      /* 원래 글자색을 따라감 */
     text-decoration: none !important; /* 밑줄 제거 */
 }
 
-/* 🟫 계좌번호 버튼 아래에 간격 추가 */
+/* 🟫 계좌번호 버튼 스타일 및 간격 통합 설정 */
 .accordion-header {
-    margin-bottom: 20px !important; 
-}
-
-/* 🟫 모든 기기에서 계좌번호 버튼 아래 간격 통일 */
-.accordion-header {
+    background-color: #eceae4 !important;
+    color: #2b2b2b !important;
+    height: 54px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+    padding: 15px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+    border: none !important;
     margin-bottom: 20px !important;
+    border-radius: 4px !important;
+    width: 100% !important;
 }
 
-/* 🟫 모바일에서만 아래 간격을 조금 더 넓히고 싶다면 아래 코드를 추가하세요 */
+/* 모바일 전용 간격 설정 */
 @media (max-width: 768px) {
     .accordion-header {
         margin-bottom: 30px !important;
     }
 }
 
+/* 계좌번호 내부 글자색 강제 고정 */
+.accordion-header span, 
+.accordion-header .arrow,
+.account-row span, 
+.account-row b {
+    color: #2b2b2b !important;
+}
+
+/* 열린 상태에서도 높이 유지 */
+.accordion-header.active,
+.accordion-item.active .accordion-header {
+    height: 54px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+}
