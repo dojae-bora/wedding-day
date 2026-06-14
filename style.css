@@ -750,3 +750,15 @@ a {
 .accordion-header {
     margin-bottom: 20px !important; 
 }
+
+/* 🟫 모든 기기에서 계좌번호 버튼 아래 간격 통일 */
+.accordion-header {
+    margin-bottom: 20px !important;
+}
+
+/* 🟫 모바일에서만 아래 간격을 조금 더 넓히고 싶다면 아래 코드를 추가하세요 */
+@media (max-width: 768px) {
+    .accordion-header {
+        margin-bottom: 30px !important;
+    }
+}
