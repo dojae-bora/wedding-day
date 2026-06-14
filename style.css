@@ -324,14 +324,14 @@ footer, .footer-section, .wedding-footer {
 
 /* 글자 뒤에 예쁜 하트 모양을 띄워주는 마법의 코드 */
 .days .wedding-day::before {
-    content: "♥"; /* 💡 빨간 하트가 마음에 드시면 이대로 쓰시고, 차분한 흰색/베이지 느낌을 원하시면 "🤍,🖤" 로 바꾸셔도 예쁩니다! */
+    content: "♥"; /* 💡 "🤍,🖤" 로 바꾸셔도 예쁩니다! */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.25rem; /* 하트 크기 */
     z-index: -1; /* 하트가 글씨 뒤로 가게 설정 */
-    opacity: 0.55; /* 은은한 느낌을 주는 투명도 */
+    opacity: 0.45; /* 은은한 느낌을 주는 투명도 */
 }
 .countdown-text { margin-top: 35px; font-size: 0.8rem; color: #7d776a; }
 
