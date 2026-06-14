@@ -331,7 +331,7 @@ footer, .footer-section, .wedding-footer {
     transform: translate(-50%, -50%);
     font-size: 3.25rem; /* 하트 크기 */
     z-index: -1; /* 하트가 글씨 뒤로 가게 설정 */
-    opacity: 0.45; /* 은은한 느낌을 주는 투명도 */
+    opacity: 0.35; /* 은은한 느낌을 주는 투명도 */
 }
 .countdown-text { margin-top: 35px; font-size: 0.8rem; color: #7d776a; }
 
