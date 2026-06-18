@@ -740,3 +740,16 @@ body {
   color: #6b6358;
   margin-top: 6px;
 }
+
+@media (max-width: 480px) {
+
+  .envelope {
+    width: 250px;
+    height: 250px;
+  }
+
+  .envelope .letter-sheet {
+    height: 210px;
+  }
+
+}
