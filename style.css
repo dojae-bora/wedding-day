@@ -101,6 +101,9 @@ body {
   gap: 15px;
   animation: sheetSlideUp 2.3s cubic-bezier(0.25, 1, 0.5, 1) 0.4s forwards;
 }
+.envelope {
+  margin: 0 auto;
+}
 .envelope::after {
   content: "";
   position: absolute;
@@ -761,4 +764,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+   .envelope {
+  margin: 0 auto;
+}
 }
