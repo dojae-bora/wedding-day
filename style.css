@@ -778,3 +778,9 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .envelope .letter-sheet {
+    left: 24px !important;
+    right: 36px !important;
+  }
+}
