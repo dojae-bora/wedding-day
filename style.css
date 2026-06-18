@@ -780,11 +780,10 @@ body {
 
 @media (max-width: 480px) {
   .envelope .letter-sheet {
-    width: 210px !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    transform: none !important;
+    width: calc(100% - 60px) !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    height: 210px !important;
   }
 }
