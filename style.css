@@ -792,7 +792,7 @@ body {
 @media (max-width: 480px) {
   @keyframes sheetSlideUp {
     from {
-      top: 100px;
+      top: 80px;
     }
     to {
       top: -65px;
