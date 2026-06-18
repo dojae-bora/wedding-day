@@ -788,3 +788,15 @@ body {
     top: 38px;
   }
 }
+
+@media (max-width: 480px) {
+
+  .card-names {
+    font-size: 10px;
+  }
+
+  .card-bottom {
+    font-size: 8px;
+  }
+
+}
