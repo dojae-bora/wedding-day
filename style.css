@@ -778,14 +778,3 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .envelope .letter-sheet {
-    width: calc(100% - 60px) !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    height: 190px !important;
-    top: 60px !important;
-  }
-}
-
