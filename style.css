@@ -748,11 +748,14 @@ body {
 
   .envelope {
     width: 250px;
-    height: 266px;
+    height: 256px;
   }
 
   .envelope .letter-sheet {
     height: 210px;
+
+     left: 28px;
+     figth: 32px
   }
 
 }
