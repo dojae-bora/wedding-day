@@ -786,3 +786,12 @@ body {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 480px) {
+  .envelope .letter-sheet {
+    left: 50% !important;
+    right: auto !important;
+    width: 210px !important;
+    transform: translateX(-50%) !important;
+  }
+}
