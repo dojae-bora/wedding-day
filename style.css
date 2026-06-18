@@ -788,3 +788,14 @@ body {
     top: 60px !important;
   }
 }
+
+@media (max-width: 480px) {
+  @keyframes sheetSlideUp {
+    from {
+      top: 80px;
+    }
+    to {
+      top: -65px;
+    }
+  }
+}
