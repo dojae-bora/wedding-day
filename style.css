@@ -754,8 +754,9 @@ body {
   .envelope .letter-sheet {
     height: 210px;
 
-     left: 26px;
-     rigth: 34px
+    left: 50%;
+    right: auto;
+     transform: translateX(-50%);
   }
 
 }
