@@ -768,3 +768,17 @@ body {
   margin: 0 auto;
 }
 }
+
+@media (max-width: 480px) {
+  .envelope-wrapper {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    align-items: center;
+    transform: translateY(35px);
+  }
+
+  .envelope {
+    margin: 0 auto;
+  }
+}
