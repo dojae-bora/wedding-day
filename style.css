@@ -785,5 +785,6 @@ body {
     right: auto !important;
     transform: translateX(-50%) !important;
     height: 215px !important;
+    top: 38px;
   }
 }
