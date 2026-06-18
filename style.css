@@ -753,3 +753,12 @@ body {
   }
 
 }
+
+@media (max-width: 480px) {
+  .accordion-header,
+  .accordion-content {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
