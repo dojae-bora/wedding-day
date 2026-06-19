@@ -691,7 +691,7 @@ body {
 }
 
 #intro-overlay.opened .letter-sheet {
-  animation: letterOpenUp 1.4s ease 0.25s forwards;
+  animation: letterOpenUp 1.4s ease forwards;
 }
 
 #intro-overlay.opened .click-notice {
@@ -799,4 +799,12 @@ body {
     font-size: 8px;
   }
 
+}
+
+#intro-overlay.loading {
+  pointer-events: none;
+}
+
+#intro-overlay.loading .click-notice {
+  opacity: 0;
 }
