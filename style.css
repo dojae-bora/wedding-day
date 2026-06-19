@@ -74,7 +74,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: envelopeFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: envelopeFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.2s forwards;
 }
 .envelope {
   position: relative;
@@ -691,7 +691,7 @@ body {
 }
 
 #intro-overlay.opened .letter-sheet {
-  animation: letterOpenUp 1.4s ease forwards;
+  animation: letterOpenUp 1.4s ease 0.25s forwards;
 }
 
 #intro-overlay.opened .click-notice {
