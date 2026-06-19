@@ -146,3 +146,13 @@ function renderKakaoMap() {
   }).render();
   kakaoMapRendered = true;
 }
+
+window.addEventListener("load", function () {
+  const intro = document.getElementById("intro-overlay");
+
+  if (intro) {
+    setTimeout(function () {
+      intro.classList.remove("loading");
+    }, 300);
+  }
+});
