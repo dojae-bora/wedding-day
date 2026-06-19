@@ -99,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  animation: sheetSlideUp 2.3s cubic-bezier(0.25, 1, 0.5, 1) 2s forwards;
+  animation: sheetSlideUp 2.3s cubic-bezier(0.25, 1, 0.5, 1) 1s forwards;
 }
 .envelope {
   margin: 0 auto;
