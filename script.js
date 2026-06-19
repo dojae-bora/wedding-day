@@ -49,6 +49,7 @@ function openEnvelope() {
   setTimeout(function () {
     overlay.style.display = "none";
     mainContent.style.display = "block";
+    mainContent.classList.add("fade-in");
     window.scrollTo(0, 0);
     renderKakaoMap();
     if (bgm) {
