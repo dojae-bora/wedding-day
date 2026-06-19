@@ -801,10 +801,11 @@ body {
 
 }
 
-#intro-overlay.loading {
+#intro-overlay.loading .envelope-wrapper {
+  opacity: 0;
   pointer-events: none;
 }
 
-#intro-overlay.loading .click-notice {
-  opacity: 0;
+#intro-overlay:not(.loading) .envelope-wrapper {
+  opacity: 1;
 }
