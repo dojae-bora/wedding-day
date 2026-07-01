@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔻신랑 신부 이름 기입 -->
+  <title>신랑이름 • 신부이름 결혼합니다</title>
+  <meta property="og:type" content="website">
+
+                                   <!-- 🔻신랑 신부 이름 기입 -->
+  <meta property="og:title" content="신랑이름 ♡ 신부이름 결혼합니다">
+
+                                                   <!-- 🔻예식 날짜 기입 -->
+  <meta property="og:description" content="2027년 1월 1일 오후 12시 30분 결혼식에 초대합니다.">
+  <meta property="og:image" content="images/kakao-thumb.jpg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-overlay" class="loading" onclick="openEnvelope()">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter-sheet card-style">
+
+<!-- 🔻카드사진이 추가 되었습니다. images 파일에 card-photo.jpg 라는 파일을 넣으셔야 해요. -->
+  <div class="card-photos">
+    <img src="images/card-photo.jpg" alt="카드 사진">
+  </div>
+
+  <div class="card-names">
+
+    <!-- 🔻신랑 영어이름 기입 -->
+    <span>신랑이름</span> 
+    <span>&</span>
+
+    <!-- 🔻신부 영어이름 기입 -->
+    <span>신부이름</span> 
+  </div>
+
+  <div class="card-bottom">
+
+    <!-- 🔻연도기입 -->
+    <span>2027</span> 
+    <span>OUR<br>WEDDING</span>
+
+    <!-- 🔻날짜기입 -->
+    <span>0101</span> 
+  </div>
+
+</div>
+      </div>
+      <p class="click-notice">TAP TO OPEN</p>
+    </div>
+  </div>
+
+
+  <div id="main-content">
+    <div id="top-sticky-bar">
+      <audio id="bgm" loop>
+        <source src="music/bgm.mp3" type="audio/mp3">
+      </audio>
+      <button id="bgm-btn" onclick="toggleBgm()">🎵 Music Off</button>
+    </div>
+    <section class="main-cover">
+      <div class="cover-text">
+        <span class="wedding-title">THE WEDDING DAY</span>
+
+                         <!-- 🔻신랑 신부 이름 기입 -->
+        <h1 class="main-names">신랑이름 · 신부이름</h1>
+        <p class="main-date-place">
+
+                     <!-- 🔻예식날짜와 시간 식장이름 작성 -->
+          2027. 01. 01 토요일 오후 12시 30분<br>
+          베뉴이름 | 홀이름
+        </p>
+      </div>
+      <div class="main-photo-area">
+        <img src="images/main.jpg" alt="메인 웨딩 사진" onerror="this.style.display='none';">
+      </div>
+ <section class="countdown-timer-section">
+
+                                 <!-- 🔻신랑 신부 이름 기입 -->
+      <div class="dday-title">신랑이름와 신부이름의 결혼식까지</div>
+      <div id="dday-counter" class="dday-badge">D-DAY 계산중...</div>
+      <div class="timer-container">
+        <div class="time-box"><span id="timer-days">00</span><label>DAYS</label></div>
+        <div class="time-divider">:</div>
+        <div class="time-box"><span id="timer-hours">00</span><label>HOURS</label></div>
+        <div class="time-divider">:</div>
+        <div class="time-box"><span id="timer-min">00</span><label>MIN</label></div>
+        <div class="time-divider">:</div>
+        <div class="time-box"><span id="timer-sec">00</span><label>SEC</label></div>
+      </div>
+    </section>
+
+    </section>
+   
+    <section class="content-section invitation-section">
+      <span class="section-sub">INVITATION</span>
+      <h2 class="section-title">소중한 분들을 초대합니다</h2>
+      <div class="flower-deco">-</div>
+      <p class="invitation-text">
+
+        <!-- 🔻다른 글귀로 작성 가능 / 한줄 띄어쓰기 시 <br> 꼭 기입 -->
+        서로 다른 길을 걸어온 두 사람이<br>
+        이제 같은 방향을 바라보며<br>
+        평생을 함께하고자 합니다.<br><br>
+        저희 두 사람이 하나가 되는 뜻깊은 날,<br>
+        귀한 걸음 하시어 저희의 새로운 시작을<br>
+        따뜻한 마음으로 축복해 주시면 감사하겠습니다.
+      </p>
+      <div class="family-relations">
+
+              <!-- 🔻혼주 성함 작성 / 신랑 신부 이름 기입 -->
+        <p><b>신랑아버지 · 신랑어머니</b> 의 장남 <span class="name-highlight">신랑이름</span></p>
+        <p><b>신랑아버지 · 신부어머니</b> 의 장녀 <span class="name-highlight">신부이름</span></p>
+      </div>
+    </section>
+   <section class="content-section calendar-section">
+  <h3 id="calendar-month" class="calendar-month"></h3>
+
+  <div class="mini-calendar">
+    <div class="calendar-grid headers">
+      <span>일</span>
+      <span>월</span>
+      <span>화</span>
+      <span>수</span>
+      <span>목</span>
+      <span>금</span>
+      <span>토</span>
+    </div>
+
+    <div id="calendar-days" class="calendar-grid days"></div>
+  </div>
+
+                            <!-- 🔻신랑 신부 이름 기입 -->
+  <p class="countdown-text">신랑이름 ♡ 신부이름의 결혼식이 <b>달력에 표시된 날</b>에 진행됩니다.
+  </p>
+</section>
+
+    <section class="content-section gallery-section">
+      <span class="section-sub">GALLERY</span>
+      <h2 class="section-title">우리의 아름다운 순간</h2>
+      <p class="gallery-notice">사진을 클릭하면 크게 보실 수 있습니다.</p>
+      <div class="gallery-container">
+
+       <!-- 🔻images폴더에 들어간 photo0.jpg의 갯수대로 아래에
+        <div class="gallery-item"><img src="images/photo1.jpg" alt="갤러리1" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div> 
+                              꼭 넣어야함 / 복사 붙여넣기 후 photo번호와 갤러리번호 변경 필수 -->
+
+        <div class="gallery-item"><img src="images/photo1.jpg" alt="갤러리1" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo2.jpg" alt="갤러리2" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo3.jpg" alt="갤러리3" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo4.jpg" alt="갤러리4" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo5.jpg" alt="갤러리5" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo6.jpg" alt="갤러리6" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo7.jpg" alt="갤러리7" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo8.jpg" alt="갤러리8" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+                <div class="gallery-item"><img src="images/photo9.jpg" alt="갤러리9" onclick="openModal(this.src)" onerror="this.parentNode.style.display='none';"></div>
+            </div>
+        </section>
+    <section class="content-section location-section">
+      <span class="section-sub">LOCATION</span>
+      <h2 class="section-title">오시는 길</h2>
+      <div class="map-area">
+        <div id="daumRoughmapContainer1781420580863" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      </div>
+      <div class="location-details">
+
+                     <!-- 🔻웨딩홀 이름 기입 -->
+        <h3 class="hall-name">웨딩시그니처</h3>
+        <div class="transport-info">
+
+                     <!-- 🔻지하철, 버스, 주차에 대한 설명 작성 -->
+          <p><b>지하철</b> 2호선,6호선 합정역 2번 출구 도보 4분<br>
+          <span class="transport-indent">2호선,경의중앙선 홍대입구역 1번 출구 도보 11분</span></p>
+          <p><b>버 스</b> 서교동 | 우리은행 서교동지점 | 합정역 하차</p>
+          <p><b>주 차</b> [건물 정문]에서 주차안내를 받으실 수 있습니다</p>
+        </div>
+      </div>
+     <div class="map-buttons">
+
+                  <!-- 🔻각 어플로 들어가서 공유하기 후 나오는 주소 복사 붙여넣기 진행 -->
+                <a href="https://kko.to/XprRtLoMdJ" target="_blank" class="map-btn kakao">카카오맵</a>
+                <a href="https://naver.me/xFLuQhhM" target="_blank" class="map-btn naver">네이버지도</a>
+                <a href="https://pages.tmap.co.kr" target="_blank" class="map-btn tmap">T맵</a>
+            </div>
+        </section>
+    <section class="content-section account-section">
+      <span class="section-sub">INFORMATION</span>
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <p class="account-intro">
+        참석이 어려우신 분들을 위해 비대면으로나마<br>
+        마음을 전하실 수 있도록 안내드립니다.<br>
+        보내주신 정성 소중히 간직하겠습니다.<br><br>
+        예식장 규정상 화환 반입 및 설치가<br>
+        불가한 점 양해 부탁드립니다.
+      </p>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>신랑측 계좌번호</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="account-row">
+
+              <!-- 🔻신랑측 계좌번호 기입 / 아래의 copyText 안의 은행과 글씨도 변경 -->
+              <span>신랑 | 이름<br><b>하나은행 1234-5678-90</b></span>
+              <button class="copy-btn" onclick="copyText('하나은행 1234-5678-90')">복사</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>신부측 계좌번호</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="account-row">
+
+              <!-- 🔻신부측 계좌번호 기입 / 아래의 copyText 안의 은행과 글씨도 변경 -->
+              <span>신부 | 이름<br><b>국민은행 0987-6543-21</b></span>
+              <button class="copy-btn" onclick="copyText('국민은행 0987-6543-21')">복사</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="final-couple-section">
+  <div class="final-couple-inner">
+    <p class="final-sub">THANK YOU</p>
+    <h2>신랑이름 · 신부이름</h2>
+    <p>
+      소중한 걸음으로 함께해 주셔서<br>
+      진심으로 감사드립니다.
+    </p>
+    <p class="final-date">2027. 01. 01</p>
+  </div>
+</section>
+
+ 
+  <div id="image-modal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img class="modal-content" id="modal-img" alt="확대 이미지">
+  </div>
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
